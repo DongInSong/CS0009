@@ -3,6 +3,7 @@ package ch3;
 import java.util.Scanner;
 
 public class A {
+    //연산자 연습
     public static void main(String[] args) {
         int num1, num2;
         Scanner sc = new Scanner(System.in);
