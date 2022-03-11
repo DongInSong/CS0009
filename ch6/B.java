@@ -2,7 +2,7 @@ package ch6;
 
 import java.util.Scanner;
 
-public class B {
+public class B { // Factorial 계산
 
     public static int facto(int a) {
         int res = 1;

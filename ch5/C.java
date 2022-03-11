@@ -2,7 +2,7 @@ package ch5;
 
 import java.util.Scanner;
 
-public class C {
+public class C { // 덧셈 연산자를 이용한 곱셈 연산
     public static void main(String[] args) {
         int num1, num2, sum = 0;
         Scanner sc = new Scanner(System.in);

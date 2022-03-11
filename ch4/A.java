@@ -2,7 +2,7 @@ package ch4;
 
 import java.util.Scanner;
 
-public class A {
+public class A { // 정수 숫자 크기 비교
     public static void main(String[] args) {
         int num1, num2;
         Scanner sc = new Scanner(System.in);

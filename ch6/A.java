@@ -2,7 +2,7 @@ package ch6;
 
 import java.util.Scanner;
 
-public class A {
+public class A { // 두 정수의 합
 
     public static int sum(int a, int b) {
         return a+b;

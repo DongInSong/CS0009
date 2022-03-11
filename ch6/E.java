@@ -2,7 +2,7 @@ package ch6;
 
 import java.util.Scanner;
 
-public class E {
+public class E { // 숫자 맞추기
 
     public static int randGame() {
         Scanner sc = new Scanner(System.in);

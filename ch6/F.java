@@ -2,7 +2,7 @@ package ch6;
 
 import java.util.Scanner;
 
-public class F {
+public class F { // 절대값 계산
 
     public static int abs(int a) {
         if(a>0) return a; // 이미 양수면 그대로 리턴

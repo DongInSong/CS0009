@@ -2,7 +2,7 @@ package ch4;
 
 import java.util.Scanner;
 
-public class E_if {
+public class E_if { // 자음 및 모음 판별기
     public static void main(String[] args) {
         String ch, ch2;
         boolean isVow = false;

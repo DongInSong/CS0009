@@ -3,7 +3,7 @@ package ch5;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class E {
+public class E { // 사칙 연산
     public static void main(String[] args) {
         double num1, num2, temp = 0;
         String oper, YorN;

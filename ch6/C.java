@@ -2,7 +2,7 @@ package ch6;
 
 import java.util.Scanner;
 
-public class C {
+public class C { // 나눗셈 연산자 대체 메소드
 
     public static int div(int a, int b) {
         int cnt = 0;

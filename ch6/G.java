@@ -2,7 +2,7 @@ package ch6;
 
 import java.util.Scanner;
 
-public class G {
+public class G { // 소수 판별
 
     public static boolean isPrime(int num) {
         var Prime = false;

@@ -2,7 +2,7 @@ package ch4;
 
 import java.util.Scanner;
 
-public class D {
+public class D { // 정수형 수식 계산기
     public static void main(String[] args) {
         int num1, num2, temp;
         String oper;

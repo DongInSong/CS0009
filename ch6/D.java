@@ -2,7 +2,7 @@ package ch6;
 
 import java.util.Scanner;
 
-public class D {
+public class D { // 두 좌표 사이의 거리 계산
 
     public static double dist(int x1, int y1, int x2, int y2) {
         return Math.sqrt((Math.pow(x1-x2, 2))+(Math.pow(y1-y2, 2)));

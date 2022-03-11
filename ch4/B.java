@@ -2,7 +2,7 @@ package ch4;
 
 import java.util.Scanner;
 
-public class B {
+public class B { // 짝수 및 홀수 판별기
     public static void main(String[] args) {
         int num, temp;
         Scanner sc = new Scanner(System.in);
