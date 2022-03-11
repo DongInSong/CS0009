@@ -15,7 +15,7 @@ public class E { // 시, 분, 초 변환
         hour = min / 60;
         min = min % 60;
 
-        System.out.println(hour + "+" + min + "+" + sec);
+        System.out.println(hour + "시 " + min + "분 " + sec + "초 ");
         sc.close();
 
     }
