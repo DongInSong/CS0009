@@ -17,7 +17,7 @@ public class A { //오칙 연산
             System.out.println("Can't be divided by 0"); sc.close(); return;
         }
         else{
-        System.out.println(num1 + "/" + num2 + "=" + (String.format("%.1f", (float)num1 / (float)num2)));
+            System.out.println(num1 + "/" + num2 + "=" + (String.format("%.1f", (float)num1 / (float)num2)));
         }
         System.out.println(num1 + "%" + num2 + "=" + (num1 % num2));
         sc.close();
