@@ -6,7 +6,7 @@ public class G { // 약수 계산
     public static void main(String[] args) {
         int num;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Input number ? ");
+        System.out.print("Input number ? ");
         num = sc.nextInt();
         System.out.print("Divisior : ");
         for (int i = 1; i <= num; i++) {
