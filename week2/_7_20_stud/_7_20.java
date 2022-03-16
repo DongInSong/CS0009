@@ -1,3 +1,4 @@
+package _7_20_stud;
 import java.text.DecimalFormat;
 
 public class _7_20 { // 성적 처리 프로그램
@@ -14,25 +15,5 @@ public class _7_20 { // 성적 처리 프로그램
         }
     }
 
-    static public class Stud {
-        String name;
-        double sub1;
-        double sub2;
-        double sub3;
 
-        public Stud(String name, double sub1, double sub2, double sub3) {
-            this.name = name;
-            this.sub1 = sub1;
-            this.sub2 = sub2;
-            this.sub3 = sub3;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public double getAverage() {
-            return (sub1 + sub2 + sub3) / 3;
-        }
-    }
 }

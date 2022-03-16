@@ -26,13 +26,19 @@ public class _7_14 {
 
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (ch >= '0' && ch <= '9') {
+            if (isNum(ch)) {
                 numCnt++;
-            } else if (ch >= 'a' && ch <= 'z') {
+            } else if (isEng(ch)) {
                 EngCnt++;
             } else
                 return false;
         }
         return (numCnt > 1 && EngCnt > 0); // 숫자 2개 이상, 영문자 1개 이상
+    }
+    static boolean isNum(char ch){
+        return (ch >= '0' && ch <= '9');
+    }
+    static boolean isEng(char ch){
+        return (ch >= 'a' && ch <= 'z');
     }
 }
