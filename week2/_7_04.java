@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _7_4 { // 배열의 원소 입력 후 역순 출력
+public class _7_04 { // 배열의 원소 입력 후 역순 출력
     public static void main(String[] args) {
         int cnt, i;
         int num[] = new int[100];

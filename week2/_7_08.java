@@ -1,4 +1,4 @@
-public class _7_8 {
+public class _7_08 {
     public static void main(String[] args) { // 배열 내의 원소가 지정된 순서대로
         int[] a1 = { 1, 1, 2, 3, 1 };
         int[] a2 = { 1, 1, 2, 4, 1 };

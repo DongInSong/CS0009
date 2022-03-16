@@ -1,6 +1,6 @@
 public class _7_18 {
     public static void main(String[] args) { // 주어진 스트링에서 앞쪽 0 글자 제거
-        String str = "0000100234000";
+        String str = "00100234000";
         System.out.println("String    = " + str);
         str = removeFrontZ(str);
         System.out.println("Converted = " + str);
@@ -12,9 +12,9 @@ public class _7_18 {
             char ch = str.charAt(i);
             if (ch != '0')
                 return str;
-           if (ch == '0') {
+            if (ch == '0') {
                 str = str.substring(1);
-                i--;
+                i--; //문자 검색 인덱스 0으로 초기화
             }
         }
         return null;

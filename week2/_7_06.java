@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class _7_6 {
+public class _7_06 {
     public static void main(String[] args) { // 배열의 원소 추가 
         int[] my_array = { 11, 22, 33, 44, 55 };
         int index_position = 2;
