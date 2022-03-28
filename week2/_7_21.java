@@ -17,7 +17,7 @@ public class _7_21 { // 바코드를 생성하는 프로그램
                 { 0, 1, 1, 0, 0 }, { 1, 0, 0, 0, 1 }, { 1, 0, 0, 1, 0 },
                 { 1, 0, 1, 0, 0 } };
 
-        int[] position = new int[num.length() + 1]; // 6번째 자리까지 길이 선언
+        int[] position = new int[num.length()+1]; // 6번째 자리까지 길이 선언
         for (int i = 0; i < num.length(); i++) {
             position[i] = (num.charAt(i) - '0');
             lastNum += position[i];
