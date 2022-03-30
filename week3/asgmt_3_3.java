@@ -69,7 +69,6 @@ public class asgmt_3_3 {
                     cnt[9]++;
                     break;
                 default:
-                    cnt[10]++;
                     break;
             }
         }
