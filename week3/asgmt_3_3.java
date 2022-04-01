@@ -73,7 +73,7 @@ public class asgmt_3_3 {
             }
         }
         System.out.println();
-        System.out.println("******결과******");
+        System.out.println("********결과********");
         for (int i = 0; i < cnt.length - 2; i++) {
             if (cnt[i] > 0) {
                 System.out.println((i * 10) + "~" + ((i * 10) + 9) + "점대 인원수: " + cnt[i] + "명");
