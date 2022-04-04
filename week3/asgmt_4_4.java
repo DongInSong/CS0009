@@ -1,6 +1,4 @@
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class asgmt_4_4 {
     public static void main(String[] args) {
@@ -19,15 +17,25 @@ public class asgmt_4_4 {
         if (target.exists()) {
             // option -l /////
             if (option.equals("-l")) {
-                String ext = "";
+                long last = 0;
                 long size = 0;
-                System.out.println("option -l " + args.length);
+                String type = "";
+                //System.out.println("option -l " + args.length);
                 for (int i = 0; i < files.length; i++) {
-                    ext = files[i].toString().substring(files[i].toString().lastIndexOf(".") + 1);
+                    last = files[i].lastModified();
+                    String date = new java.text.SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
+                            .format(new java.util.Date(last));
                     size = files[i].length();
-                    System.out.println("file: " + files[i] + " byte :" + size);
+                    type = files[i].toString().substring(files[i].toString().lastIndexOf(".") + 1);
+                    if (files[i].isDirectory()) {
+                        type = "dir";
+                    } else
+                        type = "file";
+                    System.out.printf("%-20s %20s %5s %5s Byte\n", files[i], date, type, size);
+                    //System.out.println(files[i] + " byte: " + size + " Last: " + date + " Type: " + type);
                 }
                 System.exit(0);
+
             }
 
             // option -r /////
@@ -38,14 +46,16 @@ public class asgmt_4_4 {
 
             // non option /////
             else {
-                System.out.println("option non " + args.length);
+                //System.out.println("option non " + args.length);
                 for (int i = 0; i < files.length; i++) {
                     System.out.println("file: " + files[i]);
                 }
                 System.exit(0);
             }
-        } else
+        } else {
             System.out.println("File not fount");
+            System.out.println("Dir [-1|-r] directory");
+        }
     }
 
     public static void showFilesInDIr(String target) {

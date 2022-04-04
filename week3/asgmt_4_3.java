@@ -16,29 +16,33 @@ public class asgmt_4_3 {
 
         if (target.exists()) {
             if (option.equals("-h")) {
-                System.out.println("option h");
+                //System.out.println("option h");
                 rd = new BufferedReader(new FileReader(target));
                 for (int i = 0; i < 5; i++) {
                     System.out.println("Line" + (i + 1) + ": " + rd.readLine());
                 }
                 rd.close();
-            } 
+            }
 
-            else if(option.equals("-t")){
-                System.out.println("option t");
-                rd = new BufferedReader(new FileReader(target));
-                String str;
+            else if (option.equals("-t")) {
+                //System.out.println("option t");
                 int cnt = 0;
-                while(rd.readLine() != null){
+                rd = new BufferedReader(new FileReader(target));
+                while (rd.readLine() != null) {
                     cnt++;
                 }
-                for(int i = cnt-5; i<cnt; i++){
+                rd.close();
+                rd = new BufferedReader(new FileReader(target));
+                for (int i = 0; i < cnt - 5; i++) {
+                    rd.readLine();
+                }
+                for (int i = 0; i < 5; i++) {
                     System.out.println("Line" + (i + 1) + ": " + rd.readLine());
                 }
                 rd.close();
-            }
-            else {
-                System.out.println("no option");
+
+            } else {
+                //System.out.println("no option");
                 rd = new BufferedReader(new FileReader(target));
                 String str;
                 while ((str = rd.readLine()) != null) {
