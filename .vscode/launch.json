@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch asgmt_5_3",
+            "request": "launch",
+            "mainClass": "asgmt_5_3",
+            "projectName": "java_e6395649"
+        },
+        {
+            "type": "java",
+            "name": "Launch asgmt_5_4",
+            "request": "launch",
+            "mainClass": "asgmt_5_4",
+            "projectName": "java_e6395649"
+        },
+        {
+            "type": "java",
+            "name": "Launch DB",
+            "request": "launch",
+            "mainClass": "asgmt_5_2.DB",
+            "projectName": "java_e6395649"
+        },
+        {
+            "type": "java",
+            "name": "Launch asgmt_5_2",
+            "request": "launch",
+            "mainClass": "asgmt_5_2",
+            "projectName": "java_e6395649"
+        },
+        {
+            "type": "java",
+            "name": "Launch asgmt_5_1",
+            "request": "launch",
+            "mainClass": "asgmt_5_1",
+            "projectName": "java_e6395649"
+        },
+        {
+            "type": "java",
+            "name": "Launch asgmt5",
+            "request": "launch",
+            "mainClass": "asgmt5",
+            "projectName": "java_e6395649"
+        },
+        {
+            "type": "java",
+            "name": "Launch test1",
+            "request": "launch",
+            "mainClass": "test1",
+            "projectName": "java_e6395649"
+        },
+        {
+            "type": "java",
             "name": "Launch test",
             "request": "launch",
             "mainClass": "test",
