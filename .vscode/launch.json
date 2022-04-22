@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch asgmt_5_1",
+            "request": "launch",
+            "mainClass": "asgmt_5_1",
+            "projectName": "CS0009_a5c94578"
+        },
+        {
+            "type": "java",
             "name": "Launch asgmt_5_3",
             "request": "launch",
             "mainClass": "asgmt_5_3",
