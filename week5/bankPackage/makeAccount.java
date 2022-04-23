@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class makeAccount {
-    public makeAccount(account account, List<account> accList) {
+    public makeAccount(){}
+    
+    public void make(account account, List<account> accList) {
         try {
             File file = new File("week5/bankPackage/bankDB.txt");
             Scanner scanner = new Scanner(file);

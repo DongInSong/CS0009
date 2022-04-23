@@ -24,19 +24,30 @@ public class account implements accInterface {
     }
 
     @Override
-    public void transfer(int val) {
+    public int transfer(int target, int val) {
+        return val;
+
     }
 
     @Override
-    public void deposit(int val) {
-        // TODO Auto-generated method stub
-        this.balance += val;
+    public boolean deposit(int val) {
+        if (val < 0) {
+            System.out.println("Error");
+            return false;
+        } else {
+            balance += val;
+            return true;
+        }
     }
 
     @Override
-    public void withdraw(int val) {
-        // TODO Auto-generated method stub
-        this.balance -= val;
+    public boolean withdraw(int val) {
+        if (val < 0 || balance < val) {
+            System.out.println("Error");
+            return false;
+        } else {
+            balance -= val;
+            return true;
+        }
     }
-
 }
