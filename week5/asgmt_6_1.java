@@ -43,7 +43,6 @@ public class asgmt_6_1 {
             System.out.println("Deserialize Error");
         }
 
-
         Collections.sort(rectList, new areaSort());
 
         for (int i = 0; i < rectList.size(); i++) {
@@ -54,13 +53,19 @@ public class asgmt_6_1 {
         }
 
         int overlaped_Area = 0;
+        int area_A;
+        int area_B;
         for (int i = 0; i < rectList.size(); i++) {
             for (int j = 0; j < rectList.size(); j++) {
                 overlaped_Area = rectList.get(i).captured(rectList.get(i), rectList.get(j));
-                if (i != j && overlaped_Area != 0) {
+                area_A = rectList.get(i).getArea();
+                area_B = rectList.get(j).getArea();
+                if (i != j &&
+                        overlaped_Area != 0 &&
+                        area_A < area_B) {
                     System.out.println("----------");
-                    System.out.println("직사각형 " + (i + 1) + "번의 면적: " + rectList.get(i).getArea());
-                    System.out.println("직사각형 " + (j + 1) + "번의 면적: " + rectList.get(j).getArea());
+                    System.out.println("직사각형 " + (i + 1) + "번의 면적: " + area_A);
+                    System.out.println("직사각형 " + (j + 1) + "번의 면적: " + area_B);
                     System.out.println("겹치는 면적: " + overlaped_Area);
                 }
             }
