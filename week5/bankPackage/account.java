@@ -1,6 +1,6 @@
 package bankPackage;
 
-public class account implements accInterface {
+public class account implements accInterface, java.io.Serializable {
 
     private int accountId;
     private int balance;

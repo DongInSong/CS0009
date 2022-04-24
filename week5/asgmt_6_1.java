@@ -1,3 +1,5 @@
+import java.io.*;
+import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -8,9 +10,39 @@ import rectPackage.rect;
 
 public class asgmt_6_1 {
     public static void main(String[] args) {
-        rect rect = new rect();
-        List<rect> rectList = new ArrayList<rect>();
-        makeRect make = new makeRect(rect, rectList);
+        rect rect;
+        List<rect> rectList = null;
+        makeRect make = null;
+
+        Path path = Paths.get("week5/rectPackage/rect");
+        if (Files.exists(path)) {
+            System.out.println("Already Serialized");
+        } else {
+            rect = new rect();
+            System.out.println("Serializing...");
+            try (ObjectOutputStream out = new ObjectOutputStream(
+                    new BufferedOutputStream(new FileOutputStream(new File("week5/rectPackage/rect"))))) {
+                out.writeObject(rect);
+                System.out.println("Serialized");
+
+            } catch (Exception e) {
+                System.out.println("Serialize Error");
+            }
+        }
+
+        System.out.println("Deserializing...");
+        try (ObjectInputStream in = new ObjectInputStream(
+                new BufferedInputStream(new FileInputStream(new File("week5/rectPackage/rect"))))) {
+            rect = (rect) in.readObject();
+            System.out.println("Deserialized");
+            rectList = new ArrayList<rect>();
+            make = new makeRect(rect, rectList);
+
+        } catch (Exception e) {
+            rect = null;
+            System.out.println("Deserialize Error");
+        }
+
 
         Collections.sort(rectList, new areaSort());
 
@@ -36,6 +68,5 @@ public class asgmt_6_1 {
                 System.out.println("----------");
             }
         }
-
     }
 }
