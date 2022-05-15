@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ATM2app",
+            "request": "launch",
+            "mainClass": "ATM2app",
+            "projectName": "CS0009_e3b37893"
+        },
+        {
+            "type": "java",
+            "name": "Launch ATMapp",
+            "request": "launch",
+            "mainClass": "ATMapp",
+            "projectName": "CS0009_e3b37893"
+        },
+        {
+            "type": "java",
             "name": "Launch test",
             "request": "launch",
             "mainClass": "test",
